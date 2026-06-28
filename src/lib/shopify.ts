@@ -136,7 +136,31 @@ export async function fetchProducts(query?: string, first = 50): Promise<Shopify
   return data?.data?.products?.edges ?? [];
 }
 
-export async function fetchProductByHandle(handle: string) {
+export interface ShopifyProductDetail {
+  id: string;
+  title: string;
+  description: string;
+  descriptionHtml?: string;
+  handle: string;
+  productType?: string;
+  tags?: string[];
+  priceRange: { minVariantPrice: { amount: string; currencyCode: string } };
+  images: { edges: Array<{ node: { url: string; altText: string | null } }> };
+  variants: {
+    edges: Array<{
+      node: {
+        id: string;
+        title: string;
+        price: { amount: string; currencyCode: string };
+        availableForSale: boolean;
+        selectedOptions: Array<{ name: string; value: string }>;
+      };
+    }>;
+  };
+  options: Array<{ name: string; values: string[] }>;
+}
+
+export async function fetchProductByHandle(handle: string): Promise<ShopifyProductDetail | null> {
   const data = await storefrontApiRequest(PRODUCT_BY_HANDLE_QUERY, { handle });
-  return data?.data?.productByHandle ?? null;
+  return (data?.data?.productByHandle as ShopifyProductDetail | null) ?? null;
 }

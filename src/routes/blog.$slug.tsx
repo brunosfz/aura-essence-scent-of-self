@@ -51,7 +51,7 @@ function PostPage() {
         <div className="mt-12 aspect-[16/9] overflow-hidden rounded-sm bg-gradient-to-br from-amber-soft/40 to-sage/30" />
 
         <div className="prose prose-lg mt-12 space-y-6 text-foreground/90">
-          {post.content.map((p, i) => (
+          {post.content.map((p: string, i: number) => (
             <p key={i} className="text-lg leading-relaxed">{p}</p>
           ))}
         </div>
