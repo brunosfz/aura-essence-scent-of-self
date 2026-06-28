@@ -87,9 +87,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Velas aromáticas, sabonetes em barra e aromatizadores artesanais. Rituais de autocuidado feitos com aromas que acolhem." },
       { name: "author", content: "AURA Essence" },
       { property: "og:title", content: "AURA Essence — Cosméticos e bem-estar sensorial" },
-      { property: "og:description", content: "Rituais de autocuidado feitos com aromas que acolhem." },
+      { property: "og:description", content: "Velas aromáticas, sabonetes em barra e aromatizadores artesanais. Rituais de autocuidado feitos com aromas que acolhem." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "AURA Essence — Cosméticos e bem-estar sensorial" },
+      { name: "twitter:description", content: "Velas aromáticas, sabonetes em barra e aromatizadores artesanais. Rituais de autocuidado feitos com aromas que acolhem." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/VCnA0z5zNSTpNFvgVaXWT5OcRHW2/social-images/social-1782660498267-AURA_logo_classic.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/VCnA0z5zNSTpNFvgVaXWT5OcRHW2/social-images/social-1782660498267-AURA_logo_classic.webp" },
     ],
     links: [
       {
