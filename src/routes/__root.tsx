@@ -11,6 +11,12 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import "@fontsource/cormorant-garamond/400.css";
+import "@fontsource/cormorant-garamond/500.css";
+import "@fontsource/cormorant-garamond/600.css";
+import "@fontsource/inter/300.css";
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/500.css";
 
 function NotFoundComponent() {
   return (
@@ -77,14 +83,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "AURA Essence — Cosméticos e bem-estar sensorial" },
+      { name: "description", content: "Velas aromáticas, sabonetes em barra e aromatizadores artesanais. Rituais de autocuidado feitos com aromas que acolhem." },
+      { name: "author", content: "AURA Essence" },
+      { property: "og:title", content: "AURA Essence — Cosméticos e bem-estar sensorial" },
+      { property: "og:description", content: "Rituais de autocuidado feitos com aromas que acolhem." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
