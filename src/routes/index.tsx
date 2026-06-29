@@ -61,7 +61,7 @@ function Index() {
           </div>
           <div className="relative">
             <div className="aspect-[4/5] overflow-hidden rounded-sm">
-              <img src={heroImg} alt="Coleção AURA Essence" width={1920} height={1280} className="h-full w-full object-cover" />
+              <img src={heroImg.url} alt="Coleção AURA Essence" width={1920} height={1280} className="h-full w-full object-cover" />
             </div>
             <div className="absolute -bottom-6 -left-6 hidden h-32 w-32 rounded-full bg-accent/40 blur-3xl md:block" />
           </div>
