@@ -7,7 +7,7 @@ import { SectionTitle } from "@/components/aura/SectionTitle";
 import { ProductCard } from "@/components/aura/ProductCard";
 import { EmptyProducts } from "@/components/aura/EmptyProducts";
 import { fetchProducts } from "@/lib/shopify";
-import heroImg from "@/assets/hero.jpg";
+import heroImg from "@/assets/hero.jpg.asset.json";
 import candlesImg from "@/assets/collection-candles.jpg";
 import soapsImg from "@/assets/collection-soaps.jpg";
 import diffusersImg from "@/assets/collection-diffusers.jpg";
